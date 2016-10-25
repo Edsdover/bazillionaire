@@ -71,7 +71,8 @@ module.exports = function(app) {
         ALTER TABLE Game
         add constraint fk_player
         foreign key (playerId)
-        REFERENCES Player (id);`
+        REFERENCES Player (id);
+      `
 
       Game.dataSource.connector.execute(sql, () => {});
       */

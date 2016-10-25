@@ -1,22 +1,22 @@
- version: '2'
+version: '2'
 
- services:
-   bazillionaire:
-     build: .
-     ports:
+services:
+  bazillionaire:
+    build: .
+    ports:
       - "3000:3000"
-     volumes:
+    volumes:
       - .:/code
-     depends_on:
+    depends_on:
       - mysql
 
-   mysql:
-     image: mysql
-     hostname: mysql
-     environment:
-       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-       - MYSQL_DATABASE=bazillionaire
-       - MYSQL_USER=bazillionaire
-       - MYSQL_PASSWORD=bazillionaire
-     ports:
+  mysql:
+    image: mysql
+    hostname: mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=bazillionaire
+      - MYSQL_USER=bazillionaire
+      - MYSQL_PASSWORD=bazillionaire
+    ports:
       - "3306:3306"
