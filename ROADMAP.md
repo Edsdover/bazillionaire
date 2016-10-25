@@ -7,16 +7,17 @@
   * Option B - Auth0.
 * Define first iteration of data models.
   * Companies
-  * Games
+  * ~~Games~~
+  * ~~Players~~
   * Ships
-  * Users
-* Build API for front end to consume data.
-  * Option A - Loopback.
-  * Option B - GraphQL.
-* Pick a database.
-  * Option A - Firebase.
-  * Option B - Google Datastore.
-  * Option C - Mongo.
+  * ~~Users~~
+* ~~Build API for front end to consume data.~~
+  * ~~Option A - Loopback.~~
+  * ~~Option B - GraphQL.~~
+* ~~Pick a database.~~
+  * ~~Option A - Firebase.~~
+  * ~~Option B - Google Datastore.~~
+  * ~~Option C - Mongo.~~
 * Product features.
   * Start new game.
   * Name your company.

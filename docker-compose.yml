@@ -12,6 +12,7 @@
 
    mysql:
      image: mysql
+     hostname: mysql
      environment:
        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
        - MYSQL_DATABASE=bazillionaire
