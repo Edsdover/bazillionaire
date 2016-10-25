@@ -40,5 +40,13 @@
   "Player": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "Company": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Ship": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }

@@ -22,3 +22,7 @@ $ docker-compose up
 ###### OpenAPI Schema
 
 * <http://localhost:3000/explorer/swagger.json>
+
+## Roadmap
+
+[Roadmap](ROADMAP.md)

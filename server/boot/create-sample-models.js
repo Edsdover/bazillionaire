@@ -5,14 +5,42 @@ module.exports = function(app) {
   var mysqlDs = app.dataSources.mysqlDs;
 
   // create and seed models
-  async.parallel({
+  var players = [];
+
+  async.parallel([
     players: async.apply(createPlayers),
-  },
-  function(err, results) {
+  ], (err, results) => {
     if (err) throw err;
-    createGames(results.players, function(err) {
-      console.log('> Models created and seeded successfully.');
-    });
+    players = results.players;
+  });
+
+  var games = [];
+
+  async.parallel([
+    games: async.apply(createGames(players)),
+  ], (err, results) => {
+    if (err) throw err;
+    games = results.games;
+    //console.log('> Models created and seeded successfully.');
+  });
+
+  var companies = [];
+
+  async.parallel([
+    players: async.apply(createCompanies(games, players)),
+  ], (err, results) => {
+    if (err) throw err;
+    companies = results.companies;
+  });
+
+  //var ships = [];
+
+  async.parallel([
+    players: async.apply(createShips(companies)),
+  ], (err, results) => {
+    if (err) throw err;
+    //ships = results.ships;
+    console.log('> Models created and seeded successfully.');
   });
 
   // create players

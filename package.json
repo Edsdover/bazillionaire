@@ -4,7 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "lint": "eslint .",
-    "start": "sleep 30 && node .",
+    "start": "node .",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
