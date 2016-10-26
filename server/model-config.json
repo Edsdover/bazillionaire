@@ -33,15 +33,15 @@
     "dataSource": "mysqlDs",
     "public": false
   },
+  "Company": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
   "Game": {
     "dataSource": "mysqlDs",
     "public": true
   },
   "Player": {
-    "dataSource": "mysqlDs",
-    "public": true
-  },
-  "Company": {
     "dataSource": "mysqlDs",
     "public": true
   },

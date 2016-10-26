@@ -1,6 +1,5 @@
 {
   "name": "Company",
-  "plural": "companies",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -22,6 +21,11 @@
     "player": {
       "type": "belongsTo",
       "model": "Player",
+      "foreignKey": ""
+    },
+    "ship": {
+      "type": "hasOne",
+      "model": "Ship",
       "foreignKey": ""
     }
   },
