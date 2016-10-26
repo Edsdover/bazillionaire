@@ -64,4 +64,4 @@ GET /api/Games?filter=%7B%22limit%22%3A%203%2C%20%22order%22%3A%20%22lastUpdated
 
 ## Roadmap
 
-[Roadmap](ROADMAP.md)
+See [Roadmap](ROADMAP.md).
