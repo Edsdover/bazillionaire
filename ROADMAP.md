@@ -5,6 +5,7 @@
 * Authentication
   * Option A - Firebase.
   * Option B - Auth0.
+  * ~~Option C - Google.~~
 * ~~Define first iteration of data models.~~
   * ~~Companies~~
   * ~~Games~~

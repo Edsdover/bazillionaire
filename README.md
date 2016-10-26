@@ -62,6 +62,29 @@ Pass URL-encoded `{"limit": 3, "order": "lastUpdated DESC"}` query object to
 GET /api/Games?filter=%7B%22limit%22%3A%203%2C%20%22order%22%3A%20%22lastUpdated%20DESC%22%7D HTTP/1.1
 ```
 
+### Authentication
+
+To enable third-party logins, copy `providers.json` into place, and update with
+valid values for `clientID` / `clientSecret`.
+
+```shell
+$ cp server/providers.json.template server/providers.json
+```
+
+**Note:** Never commit OAuth credentials to source/version control.
+
+#### Login
+
+```http
+GET /auth/google HTTP/1.1
+```
+
+#### Logout
+
+```http
+GET /logout HTTP/1.1
+```
+
 ## Roadmap
 
 See [Roadmap](ROADMAP.md).
