@@ -5,11 +5,11 @@
 * Authentication
   * Option A - Firebase.
   * Option B - Auth0.
-* Define first iteration of data models.
-  * Companies
+* ~~Define first iteration of data models.~~
+  * ~~Companies~~
   * ~~Games~~
   * ~~Players~~
-  * Ships
+  * ~~Ships~~
   * ~~Users~~
 * ~~Build API for front end to consume data.~~
   * ~~Option A - Loopback.~~
