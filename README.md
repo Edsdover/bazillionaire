@@ -10,16 +10,16 @@ Docker.
 $ docker-compose up
 ```
 
-###### App
+#### App
 
 * <http://localhost:3000>
 
-###### API and Explorer
+#### API and Explorer
 
 * <http://localhost:3000/api>
 * <http://localhost:3000/explorer>
 
-###### OpenAPI Schema
+#### OpenAPI Schema
 
 * <http://localhost:3000/explorer/swagger.json>
 
@@ -28,15 +28,15 @@ $ docker-compose up
 For more details on and examples of Loopback API query syntax, please reference
 <http://loopback.io/doc/en/lb2/Querying-data.html>.
 
-###### Find Ship by Company ID
+#### Find Ship by Company ID
 
-REST syntax.
+##### REST syntax.
 
 ```http
 GET /api/Ships?filter[where][companyId]=1 HTTP/1.1
 ```
 
-"Stringified" JSON syntax.
+##### "Stringified" JSON syntax.
 
 Pass URL-encoded `{"where": {"companyId": 1}}` query object to `filter` GET
 parameter.
@@ -45,15 +45,15 @@ parameter.
 GET /api/Ships?filter=%7B%22where%22%3A%20%7B%22companyId%22%3A%201%7D%7D HTTP/1.1
 ```
 
-###### Find First 3 Games in Reverse Chronological Order
+#### Find First 3 Games in Reverse Chronological Order
 
-REST syntax.
+##### REST syntax.
 
 ```http
 GET /api/Players?filter[limit]=3&filter[order]=lastUpdated%20DESC HTTP/1.1
 ```
 
-"Stringified" JSON syntax.
+##### "Stringified" JSON syntax.
 
 Pass URL-encoded `{"limit": 3, "order": "lastUpdated DESC"}` query object to
 `filter` GET parameter.
