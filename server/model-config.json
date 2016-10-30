@@ -32,7 +32,7 @@
   },
   "User": {
     "dataSource": "mysqlDs",
-    "public": false
+    "public": true
   },
   "UserCredential": {
     "dataSource": "mysqlDs",
@@ -40,7 +40,7 @@
   },
   "UserIdentity": {
     "dataSource": "mysqlDs",
-    "public": false
+    "public": true
   },
   "Company": {
     "dataSource": "mysqlDs",
